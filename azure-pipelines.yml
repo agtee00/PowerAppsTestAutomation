@@ -29,8 +29,8 @@ parameters:
    default: All
    values:
    - Chrome
-   - Firefox
-   - All
+   # EHA - Firefox
+   # EHA - All
  - name: LoginMethod
    displayName: Login Type # See: https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/user-account-management
    type: string
@@ -64,7 +64,7 @@ jobs:
 
   steps:
   - checkout: self
-  - checkout: PowerAppsTestAutomation
+  # EHA - checkout: PowerAppsTestAutomation
   #- template: localsteps.yml # Provide optional local YAML template here
   - template: frameworksteps.yml@PowerAppsTestAutomation
     parameters:
