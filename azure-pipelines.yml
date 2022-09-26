@@ -64,7 +64,7 @@ jobs:
 
   steps:
   - checkout: self
-  # EHA - checkout: PowerAppsTestAutomation
+  - checkout: PowerAppsTestAutomation
   #- template: localsteps.yml # Provide optional local YAML template here
   - template: frameworksteps.yml@PowerAppsTestAutomation
     parameters:
